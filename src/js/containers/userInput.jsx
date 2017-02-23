@@ -35,9 +35,9 @@ renderList(){
     return (
         <div>
             <form action="POST" onSubmit={this.handleUsers}>
-                <input type="text" onChange={(e) => this.setState({name: e.target.value})} value={this.state.name}/>
-                <input type="email" onChange={(e) => this.setState({email:e.target.value})} value={this.state.email}/>
-                <input type="number" onChange={(e) => this.setState({age :e.target.value})} value={this.state.age}/>
+                <input type="text" onChange={(e) => this.setState({name: e.target.value})} value={this.state.name} placeholder="Name"/>
+                <input type="email" onChange={(e) => this.setState({email:e.target.value})} value={this.state.email} placeholder="Email"/>
+                <input type="number" onChange={(e) => this.setState({age :e.target.value})} value={this.state.age} placeholder="Age"/>
                 <input type="submit" value="I'm in."/>
             </form>
         </div>
