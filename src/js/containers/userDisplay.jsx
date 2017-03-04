@@ -14,18 +14,18 @@ componentWillMount(){
     this.props.getUsers();
 }
    render(){
-       
+       console.log(`This is the render method and rendering the props ${this.props}`,this.props);
       return( <div>
           <h1>If your coming you'll be shown who els is coming.</h1>
           <ul>
-         {this.props.users.map((user,idx)=>{
-           return (
-               
-               <li key={idx}>{user.name}
-               </li>
-             
-           ) 
-       })}
+        {/*{this.props.users.map((user,idx)=>{
+        return (
+            
+            <li key={idx}>{user.name}
+            </li>
+            
+        ) 
+    })}*/}
        </ul>
          </div>)
     
