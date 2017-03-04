@@ -8,7 +8,7 @@ module.exports = {
     entry: __dirname + "/src/js/index.js",
 
     output: {
-        path: __dirname + "/app",
+        path: __dirname + "/docs",
         filename: "bundle.js",
 
     },
@@ -55,7 +55,7 @@ module.exports = {
     ],
     devServer: {
         port : "1000",
-        contentBase: "./app",
+        contentBase: "./docs",
         // colors: true,
         historyApiFallback: true,
         inline: true,
